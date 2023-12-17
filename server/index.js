@@ -104,9 +104,9 @@ var captureImageShot = (amount, i, name) => {
             await saveToDB(amount, outputPath);
            }
            i++;
-           if(i <= amount) {
-               captureImageShot(amount, i, name);
-           }
+        //    if(i <= amount) {
+            captureImageShot(amount, i, name);
+        //    }
            resolve('success');
        });
     })
