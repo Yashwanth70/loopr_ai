@@ -1,0 +1,37 @@
+{
+  "name": "loopr_ai_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "build-opencv --incDir /opt/homebrew/Cellar/opencv/4.8.1_5/include/opencv4 --libDir /opt/homebrew/Cellar/opencv/4.8.1_5/lib --binDir /opt/homebrew/Cellar/opencv/4.8.1_5/bin --nobuild rebuild",
+    "start": "nodemon index.js",
+    "test": "jest"
+  },
+  "author": "Yashwanth",
+  "license": "ISC",
+  "dependencies": {
+    "@u4/opencv-build": "^0.7.8",
+    "@u4/opencv4nodejs": "^6.5.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "0.0.1-security",
+    "mongoose": "^7.6.3",
+    "morgan": "^1.10.0",
+    "node-webcam": "^0.8.2",
+    "opencv-build": "^0.1.9",
+    "opencv4nodejs": "^5.6.0",
+    "socket.io": "^4.7.2"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": "1",
+    "OPENCV_INCLUDE_DIR": "/opt/homebrew/Cellar/opencv/4.8.1_5/include/opencv4",
+    "OPENCV_LIB_DIR": "/opt/homebrew/Cellar/opencv/4.8.1_5/lib",
+    "OPENCV_BIN_DIR": "/opt/homebrew/Cellar/opencv/4.8.1_5/bin"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
